@@ -1,0 +1,5 @@
+/dist
+/node_modules
+/src/_data/companies.json
+/src/_data/index.json
+.DS_Store

@@ -1,0 +1,15 @@
+---
+layout: layout.html
+title: directory 11ty
+pagination:
+    data: companies
+    size: 20
+---
+
+<ul>
+    {%- for b in pagination.items -%}
+        <li>
+            <a href="company/{{b.slug}}">{{b.name}}</a>
+        </li>
+    {%- endfor -%}
+</ul>

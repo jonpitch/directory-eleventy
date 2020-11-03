@@ -1,0 +1,21 @@
+{
+  "name": "directory-eleventy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve",
+    "build-search-index": "cat src/_data/companies.json | node build-search-index.js > src/_data/index.json" 
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1"
+  },
+  "dependencies": {
+    "lunr": "^2.3.9"
+  }
+}
